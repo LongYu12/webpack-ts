@@ -1,0 +1,10 @@
+{
+
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "strict": true,
+    // "outDir": "js" //编辑js的输出目录
+
+  },
+}

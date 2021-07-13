@@ -1,0 +1,19 @@
+npm i -D webpack webpack-cli 
+详见一下
+ "devDependencies": {
+    "html-webpack-plugin": "^5.3.2", //最好是带版本安装  npm i -D html-webpack-plugin
+                                     //官方链接 https://github.com/jantimon/html-webpack-plugin#configuration
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  }
+
+
+ npm i -D webpack-dev-server  //webpack的服务器，类似live-server
+ 然后在package.json中加上配置  "start": "webpack server --open chrome.exe"
+ 
+  npm i -D clean-webpack-plugin  //每次生产 dist文件夹 都会清空原 dist夹 文件内容
+
+//编译成的代码能更好的兼容旧版本浏览器、所有浏览器   core-js这是个兼容库，让老版本浏览器能用新版本的技术
+ cnpm i -D @babel/core @babel/preset-env babel-loader core-js
